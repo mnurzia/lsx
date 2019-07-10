@@ -8,12 +8,12 @@ O - Change certain long options to a catch-all long-only option:
     - --sort-size -> --sort=size
     - --listing-long -> --listing=long
     - --size-si -> --size=si
-O - Add regex/glob option(s)
+O - Add regex/glob option(s) like fnmatch
 O - Add time style option a la exa (--time-style)
 O - Possible switch to a better argument parser. We'll see.
 O - Add more sort fields (inode, extension)
 O - Add facility to import old LS_COLORS/LSCOLORS environment variable and
       export as new JSON format
-O - Add facility to darken every other line when in 24bit mode
-O - Add facility to create a custom output format sorta like $PROMPT
-O - Add facility to test/specify whether 24bit mode is required
+O - Add facility to darken every other line when in 24bit mode like a notebook
+O - Add facility to create a custom output format sorta like $PROMPT or strftime
+O - Add facility to test/specify whether 24bit mode is required possibly using terminfo data (not a library though)
