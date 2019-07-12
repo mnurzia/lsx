@@ -1,0 +1,4 @@
+#define LS_VERSION_MAJOR -1
+#define LS_VERSION_MINOR -1
+#define LS_VERSION_PATCH -1
+#define LS_BUILD_GIT 1

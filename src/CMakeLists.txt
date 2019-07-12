@@ -30,4 +30,6 @@ endif()
 
 target_link_libraries(lsx ext)
 
+target_compile_definitions(lsx PRIVATE CMAKE_BUILD)
+
 install(TARGETS lsx DESTINATION bin)

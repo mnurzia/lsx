@@ -35,7 +35,7 @@
 // -d --        Need help with this one... not sure about what it does
 // -f -- DONE
 // -g -- DONE
-// -h -- 
+// -h -- DONE
 // -i -- DONE
 // -k -- 
 // -l -- DONE

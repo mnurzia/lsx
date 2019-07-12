@@ -18,7 +18,7 @@
 #if LS_BUILD_GIT
     #define LS_OPTION_GIT (CHAR_MIN - 13)
 #endif
-#define LS_OPTION_FORMAT (CHAR_MIN - 14)
+//#define LS_OPTION_FORMAT (CHAR_MIN - 14)
 
 struct ls_program_option ls_program_options[] = {
     {{"all", no_argument, NULL, 'a'},
@@ -110,14 +110,16 @@ struct ls_program_option ls_program_options[] = {
     {{"git", no_argument, NULL, LS_OPTION_GIT},
         "display git info after/next to files in -l"},
 #endif
+/**
     {{"format", required_argument, NULL, LS_OPTION_FORMAT},
         "format specifiers, see below"},
+**/
     {{"help", no_argument, NULL, LS_OPTION_HELP},
         "print this help text and exit"},
     {{NULL,0,NULL,0},NULL},
 };
 
-int ls_program_options_count = (sizeof(ls_program_options)/sizeof(struct ls_program_option))-1;
+const int ls_program_options_count = (sizeof(ls_program_options)/sizeof(struct ls_program_option))-1;
 
 const char* ls_program_options_string = 
     "acfghilmnoprstuw:xACFHLRSUV1";
@@ -656,6 +658,7 @@ void ls_options_get(struct ls_state* state, int argc, char** argv) {
                 break;
             }
 #endif
+/**
             case LS_OPTION_FORMAT: {
                 if (optarg == NULL) {
                     ls_do_arg_error(state,"--format: Invalid string");
@@ -664,6 +667,7 @@ void ls_options_get(struct ls_state* state, int argc, char** argv) {
                 }
                 break;
             }
+**/
             case '?':
             default:
                 ls_options_print_usage();

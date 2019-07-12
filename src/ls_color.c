@@ -195,6 +195,8 @@ struct ls_color ls_color_parse(char* in, size_t l) {
     }
 }
 
+// This would probably be better as a binary search but whatever. i learned
+// about binary search after writing this anyways.
 struct ls_color_named ls_named_colors[256] = {
     {"red"               ,   9}, {"tan"               , 180}, {"navy"              ,   4}, {"teal"              ,   6},
     {"grey"              ,   8}, {"lime"              ,  10}, {"blue"              ,  12}, {"aqua"              ,  14},
